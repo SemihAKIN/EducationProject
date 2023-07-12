@@ -1,5 +1,5 @@
 import 'package:education_project/recurring/color_variations.dart';
-import 'package:education_project/view/home.dart';
+import 'package:education_project/view/login_page.dart';
 import 'package:flutter/material.dart';
 
 class Splash extends StatefulWidget {
@@ -15,7 +15,7 @@ class _SplashState extends State<Splash> {
     super.initState();
     Future.delayed(const Duration(seconds: 2), () {
       Navigator.push(
-          context, MaterialPageRoute(builder: (context) => HomePage()));
+          context, MaterialPageRoute(builder: (context) => LoginPage()));
     });
   }
 
