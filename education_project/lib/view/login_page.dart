@@ -31,7 +31,6 @@ class _LoginPageState extends State<LoginPage> {
                   children: [
                     HeadingText(
                       text: "Login",
-                      style: TextStyle(),
                     ),
                   ],
                 )),
