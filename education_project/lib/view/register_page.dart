@@ -1,4 +1,5 @@
 import 'package:education_project/recurring/color_variations.dart';
+import 'package:education_project/recurring/font_style.dart';
 import 'package:flutter/material.dart';
 
 class RegisterPage extends StatefulWidget {
@@ -34,11 +35,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Register",
-                        style: TextStyle(
-                            color: ColorVariations.white,
-                            fontSize: 40,
-                            fontWeight: FontWeight.bold)),
+                    HeadingText(text: "Register"),
                   ],
                 )),
             SizedBox(height: 20),
