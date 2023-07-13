@@ -1,4 +1,6 @@
+import 'package:education_project/recurring/button_type.dart';
 import 'package:education_project/recurring/color_variations.dart';
+import 'package:education_project/recurring/font_style.dart';
 import 'package:education_project/view/register_page.dart';
 import 'package:flutter/material.dart';
 
@@ -27,11 +29,10 @@ class _LoginPageState extends State<LoginPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Login",
-                        style: TextStyle(
-                            color: ColorVariations.white,
-                            fontSize: 40,
-                            fontWeight: FontWeight.bold)),
+                    HeadingText(
+                      text: "Login",
+                      style: TextStyle(),
+                    ),
                   ],
                 )),
             _space40(),
@@ -118,59 +119,23 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       _space40(),
                       Center(
-                          child: ElevatedButton(
-                              onPressed: () {},
-                              style: ElevatedButton.styleFrom(
-                                  backgroundColor: ColorVariations.orange,
-                                  shape: const RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.all(
-                                          Radius.circular(50)))),
-                              child: const Padding(
-                                padding: EdgeInsets.only(
-                                  top: 15,
-                                  bottom: 15,
-                                  left: 50,
-                                  right: 50,
-                                ),
-                                child: Text(
-                                  "Login",
-                                  style: TextStyle(
-                                      color: ColorVariations.white,
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 15),
-                                ),
-                              ))),
+                          child: ButtonType(
+                        labeltext: "Login",
+                        colortype: ColorVariations.orange,
+                        onPressed: () {},
+                      )),
                       _space40(),
                       Center(
-                          child: ElevatedButton(
-                              onPressed: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) =>
-                                          const RegisterPage()),
-                                );
-                              },
-                              style: ElevatedButton.styleFrom(
-                                  backgroundColor: ColorVariations.yellow,
-                                  shape: const RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.all(
-                                          Radius.circular(50)))),
-                              child: const Padding(
-                                padding: EdgeInsets.only(
-                                  top: 15,
-                                  bottom: 15,
-                                  left: 50,
-                                  right: 50,
-                                ),
-                                child: Text(
-                                  "Sign in",
-                                  style: TextStyle(
-                                      color: ColorVariations.white,
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 15),
-                                ),
-                              ))),
+                          child: ButtonType(
+                        labeltext: 'Sign in',
+                        colortype: ColorVariations.yellow,
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => RegisterPage()));
+                        },
+                      )),
                     ]),
                   ),
                 ),
