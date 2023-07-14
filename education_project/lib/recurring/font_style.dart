@@ -6,7 +6,7 @@ class TextFontStyles {
       fontSize: 40, fontWeight: FontWeight.bold, color: ColorVariations.white);
 
   static const TextStyle body = TextStyle(
-      fontSize: 16, fontWeight: FontWeight.bold, color: ColorVariations.white);
+      fontSize: 16, fontWeight: FontWeight.bold, color: ColorVariations.dark);
 }
 
 class HeadingText extends StatelessWidget {
@@ -18,6 +18,28 @@ class HeadingText extends StatelessWidget {
     Key? key,
     required this.text,
     this.style = TextFontStyles.heading,
+    this.align = TextAlign.left,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      text,
+      style: style,
+      textAlign: align,
+    );
+  }
+}
+
+class BodyText extends StatelessWidget {
+  final String text;
+  final TextStyle style;
+  final TextAlign align;
+
+  const BodyText({
+    Key? key,
+    required this.text,
+    this.style = TextFontStyles.body,
     this.align = TextAlign.left,
   }) : super(key: key);
 

@@ -1,3 +1,4 @@
+import 'package:education_project/recurring/button_type.dart';
 import 'package:education_project/recurring/color_variations.dart';
 import 'package:education_project/recurring/font_style.dart';
 import 'package:flutter/material.dart';
@@ -137,24 +138,11 @@ class _RegisterPageState extends State<RegisterPage> {
                       height: 40,
                     ),
                     Center(
-                      child: ElevatedButton(
-                          onPressed: () {},
-                          style: ElevatedButton.styleFrom(
-                              backgroundColor: ColorVariations.orange,
-                              shape: RoundedRectangleBorder(
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(50)))),
-                          child: Padding(
-                            padding: EdgeInsets.only(
-                                top: 15, bottom: 15, left: 50, right: 50),
-                            child: Text(
-                              "Save",
-                              style: TextStyle(
-                                  color: ColorVariations.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 15),
-                            ),
-                          )),
+                      child: ButtonType(
+                        labeltext: "Save",
+                        colortype: ColorVariations.orange,
+                        onPressed: () {},
+                      ),
                     )
                   ]),
                 ),

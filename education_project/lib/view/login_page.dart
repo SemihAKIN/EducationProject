@@ -1,6 +1,7 @@
 import 'package:education_project/recurring/button_type.dart';
 import 'package:education_project/recurring/color_variations.dart';
 import 'package:education_project/recurring/font_style.dart';
+import 'package:education_project/view/home.dart';
 import 'package:education_project/view/register_page.dart';
 import 'package:flutter/material.dart';
 
@@ -121,7 +122,12 @@ class _LoginPageState extends State<LoginPage> {
                           child: ButtonType(
                         labeltext: "Login",
                         colortype: ColorVariations.orange,
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => HomePage()));
+                        },
                       )),
                       _space40(),
                       Center(
