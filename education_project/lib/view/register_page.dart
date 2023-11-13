@@ -138,7 +138,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       height: 40,
                     ),
                     Center(
-                      child: ButtonType(
+                      child: ButtonTypeNormal(
                         labeltext: "Save",
                         colortype: ColorVariations.orange,
                         onPressed: () {},

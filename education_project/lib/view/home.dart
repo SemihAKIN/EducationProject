@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> {
                       Container(
                         decoration: BoxDecoration(
                             color: ColorVariations.white,
-                            borderRadius: BorderRadius.circular(10),
+                            borderRadius: BorderRadius.circular(20),
                             boxShadow: [
                               BoxShadow(
                                   color: ColorVariations.orange,
@@ -83,7 +83,7 @@ class _HomePageState extends State<HomePage> {
                       SizedBox(
                         height: 40,
                       ),
-                      ButtonType(
+                      ButtonTypeNormal(
                         labeltext: 'Start',
                         colortype: ColorVariations.yellow,
                         onPressed: () {

@@ -119,7 +119,7 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       _space40(),
                       Center(
-                          child: ButtonType(
+                          child: ButtonTypeNormal(
                         labeltext: "Login",
                         colortype: ColorVariations.orange,
                         onPressed: () {
@@ -131,7 +131,7 @@ class _LoginPageState extends State<LoginPage> {
                       )),
                       _space40(),
                       Center(
-                          child: ButtonType(
+                          child: ButtonTypeNormal(
                         labeltext: 'Sign in',
                         colortype: ColorVariations.yellow,
                         onPressed: () {
